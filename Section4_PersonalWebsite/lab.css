@@ -1,3 +1,15 @@
+title{
+	text-align: center;
+}
 body {
-	background-color: #FFD6DC;
+	background-color: yellow;
+	text-align: center;
+	font-family: "Courier New", Monospace;
+	font-size: 20px;
+}
+p {
+	font-weight: bold;
+}
+input{
+	font-size: 25px;
 }

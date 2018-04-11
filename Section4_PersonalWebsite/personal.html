@@ -6,11 +6,16 @@
             <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
         </head>
         <body>
-            <h1>My Favorate Food</h1>
+            <h1>Xiaotai Chai's Personal Website</h1>
             <img src="http://www.beijing-privatetour.com/upfile/201601/2016012740259173.jpg" alt="Beijing Roast Duck">
-            <p>D3 Has been loaded into this page from a CDN.</p>
         </body>
         <script>
-            d3.select()
+            d3.select("body").append("h2").text("This is my favorate food.")
+            d3.select("body").append("p").text("Question: What's the name of the above dish?")
+            d3.select("body").append("input").attr('type','text').attr('value','Beijing Roast Duck')
+            d3.select("body").append("input").attr('type','submit').attr('value','submit').attr('onclick','clicked_button()')
+            function clicked_button(){
+                alert("Correct!");
+            }
         </script>
     </html>
